@@ -1,6 +1,6 @@
 const nodemailer = require('nodemailer');
 
-process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // para enviar correo sin certificaccion certificacion
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0"; // para enviar correo sin certificaccion 
 
 module.exports = (formulario) => {
  var transporter = nodemailer.createTransport({

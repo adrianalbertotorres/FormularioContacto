@@ -12,6 +12,8 @@ export class AppComponent {
 contactForm(form) {
   this._MessageService.sendMessage(form).subscribe(() => {
     console.log("Mensaje enviado");
+    
+    
   });
   }
  }

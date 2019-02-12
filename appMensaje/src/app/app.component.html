@@ -1,6 +1,6 @@
 <div class="container mt-5">
   <h2>Formulario de contacto</h2>
-  <form (ngSubmit)="contactForm(form.value)" #form="ngForm">
+  <form (ngSubmit)="contactForm(form.value)" #form="ngForm" >
   <div class="form-group">
   <label>Nombre</label>
   <input type="text" class="form-control" name="nombre" ngModel>
@@ -19,6 +19,8 @@
   </div>
   <button type="submit" class="btn btn-primary">Enviar</button>
   </form>
+  <form onsubmit="this.reset()"></form>
+  
  </div>
 
 <router-outlet></router-outlet>
